@@ -15,8 +15,7 @@ Role Variables
 
 | Name                        | Description    | Example |
 |-----------------------------|---------------|-----------------|
-| nginx_apps          | A list of apps to add to nginx | | - { name: 'my_app', config: 'my_app.conf' }
-                                                           - { name: 'my_second_app', config: '/path/to/my_config2.cong' } |
+| nginx_apps          | A list of apps to add to nginx | - { name: 'my_app', config: 'my_app.conf' } |
 
 
 Example Playbook
