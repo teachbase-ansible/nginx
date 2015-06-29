@@ -15,7 +15,7 @@
   with_items: nginx_apps
 
 - name: Nginx | Enable apps
-  file: path=/etc/nginx/sites-available/{{ item.name }} src=/etc/nginx/sites-enabled/{{ item.name }} state=link
+  file: path=/etc/nginx/sites-enabled/{{ item.name }} src=/etc/nginx/sites-available/{{ item.name }} state=link
   with_items: nginx_apps
   notify:
     - Restart Nginx
