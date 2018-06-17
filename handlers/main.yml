@@ -1,2 +1,7 @@
-- name: Restart Nginx
+- name: Restart Nginx Service
   command: service nginx restart
+  when: os_version|int <= 14.04
+
+- name: Restart Nginx Systemd
+  systemd: name=nginx state=restarted
+  when: os_version|int > 14.04

@@ -1,2 +1,4 @@
 # Nginx app should contain 'name' and 'config' fields 
 nginx_apps: []
+os_name: "{{ ansible_distribution }}" # e.g. "Ubuntu"
+os_version: "{{ ansible_distribution_version }}" # e.g. "16.04"

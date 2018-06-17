@@ -6,7 +6,7 @@ Installs Nginx and setup apps (if provided).
 Installation
 --------------
 
-`ansible-galaxy install palkan.nginx`
+`ansible-galaxy install teachbase-ansible.nginx`
 
 Role Variables
 --------------
@@ -23,5 +23,5 @@ Example Playbook
 ```yml
   - hosts: servers
     roles:
-       - palkan.nginx
+       - teachbase-ansible.nginx
 ```
